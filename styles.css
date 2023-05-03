@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0%;
+    font-family: 'popins',sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: #5a5a5a;
+}
+img{
+  cursor: pointer;
+}
+.flex-div{
+  display: flex;
+  align-items: center;
+}
+nav{
+  padding: 10px 2px;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  position: sticky;
+  top:0; 
+  z-index: 10;
+}
+.nav-right img{
+  width: 20px;
+  margin-right: 25px;
+}
+.nav-right .user-icon{
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 0;
+}
+
+.nav-left .menu-icon{
+  width:22px;
+  margin-right:25px;
+}
+.nav-left .logo{
+  width: 130px;
+}
+.nav-middle .menu-icon{
+  width: 16px;
+}
+.nav-middle .search-box{
+  border: 1px solid #ccc;
+  margin-right: 15px;
+  padding: 8px 12px;
+  border-radius: 25px
+}
+.nav-middle .search-box input{
+  width: 400px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+.nav-middle .search-box img{
+  width: 15px;
+}
+
+/*----------sidebar---------------*/
+.sidebar{
+  background: #fff;
+  width: 15%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  padding-left: 2%;
+  padding-top: 80px;
+}
+/*---------shortcuts size change code home explore etc -------*/
+.shortcut-links a img{
+  width: 20px;
+  margin-right: 20px;
+}
+/*---------shortcuts name move from down to right side etc -------*/
+
+.shortcut-links a{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: fit-content;
+  flex-wrap: wrap;
+
+}
+/*---------shortcuts Home color change but my color is not chnage-------*/
+.shortcut-links a :first-child{
+  color: #ed3833;
+}
+/*---------shortcuts line code not working etc -------*/
+.sidebar hr{
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  width: 85%;
+}
+
+/*---------Subscribes name  resize-------*/
+.subscribed-list h3{
+  font-size: 13px;
+  margin: 20px 0;
+  color: #5a5a5a;
+}
+/*---------Subscribes name move from down to right side  -------*/
+
+.subscribed-list a{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: fit-content;
+  flex-wrap: wrap;
+}
+/*---------Subscribes name  and name perfect resize-------*/
+.subscribed-list a img{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+/*---------shortcuts is not minimize -------*/
+ 
+.small-sidebar{
+  width: 5%;
+}
+
+.small-sidebar a p{
+  display: none;
+
+}
+.small-sidebar h3{
+  display: none;
+}
+
+.small-sidebar h3{
+  width: 50%;
+  margin-bottom: 25px;
+}
+
+/*---------main -------*/
+
+.container{
+  background: #f9f9f9;
+  padding-left: 17%;
+  padding-right: 2%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+.banner{
+  width: 100%;
+}
+
+.banner img{
+  width: 100%;
+  border-radius: 8px;
+}
