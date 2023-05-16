@@ -42,7 +42,7 @@ nav{
 .nav-left .logo{
   width: 130px;
 }
-.nav-middle .menu-icon{
+.nav-middle .mic-icon{
   width: 16px;
 }
 .nav-middle .search-box{
@@ -66,7 +66,7 @@ nav{
   background: #fff;
   width: 15%;
   height: 100vh;
-  position: fixed;
+  position: absolute;
   top: 0;
   padding-left: 2%;
   padding-top: 80px;
@@ -95,7 +95,7 @@ nav{
   border: 0;
   height: 1px;
   background: #ccc;
-  width: 85%;
+  width: 8%;
 }
 
 /*---------Subscribes name  resize-------*/
@@ -134,26 +134,349 @@ nav{
   display: none;
 }
 
-.small-sidebar h3{
+.small-sidebar hr{
   width: 50%;
   margin-bottom: 25px;
 }
 
 /*---------main -------*/
 
-.container{
+.container {
   background: #f9f9f9;
   padding-left: 17%;
   padding-right: 2%;
   padding-top: 20px;
   padding-bottom: 20px;
-
 }
-.banner{
+
+.large-container {
+  padding: 7%;
+} 
+
+.large-list-container {
+  padding: 7%;
+} 
+
+
+.banner {
   width: 100%;
 }
 
-.banner img{
+.banner img {
   width: 100%;
   border-radius: 8px;
 }
+
+.list-container {
+  padding-left: 17%;
+  padding-right: 2%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 16px;
+  grid-row-gap: 30px;
+  margin-top: 15px;
+}
+
+.vid-list .thumbnail {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.vid-list .flex-div{
+  align-items: flex-start;
+  margin-top: 7px;
+}
+
+.vid-list .flex-div img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.vid-info {
+  color: #5a5a5a;
+  font-size: 13px;
+}
+
+.vid-info a {
+color: #000;
+font-weight: 600;
+display: block;
+margin-bottom: 5px;
+}
+
+
+@media(max-wdth: 900px){
+  .menu-icon{
+    display: none;
+    
+  }
+  .sidebar{
+    display: none;
+  }
+  .container, .large-container{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .nav-right img{
+    display: none;
+  }
+
+  .nav-right .user-icon{
+    display: block;
+    width: 30px;
+  }
+  .nav-middle .search-box input{
+    width: 100px;
+  }
+  .nav-middle .mic-icon{
+    display: none;
+  }
+  .logo{
+    width: 90px;
+  }
+}
+/*------------play video page-------------*/
+
+
+.play-container {
+  padding-left: 2%;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.play-video{
+  flex-basis: 69%;
+}
+
+.right-sidebar {
+  flex-basis: 30%;
+}
+
+.play-video video {
+  width: 100%;
+}
+
+/*...........#Css #HTMl #JAVASCRIPt in blue color changes...........*/
+.side-video-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.side-video-list img{
+  width: 100%;
+}
+.side-video-list .small-thumnail{
+  flex-basis: 49%;
+}
+.side-video-list .vid-info{
+  flex-basis: 49%;
+}
+.play-video .tags a{
+  color: #0000ff;
+  font-size: 13px;
+}    /*........Best Youtube Channl to Learn Development Knowledge size ............*/
+.play-video h3{
+  font-weight: 600;
+  font-size: 22px;
+}
+/* ............like and dislike perfect resize...........*/ 
+.play-video .play-video-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+.play-video .play-video-info a img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+/* .............views and likes are equal in lin e...........*/ 
+.play-video .play-video-info a{
+  display: inline-flex;
+  align-items: center;
+  margin-left: 15px;
+}
+/* .............make the under line in light color below the views and likes ...........*/ 
+.play-video hr{
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 10px 0;
+}
+
+/* .............subscribe button  move from left to right...........*/
+.publisher{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.publisher div{
+  flex: 1;
+  line-height: 18px;
+}
+
+/* .............Jack image and Easy Turtorial 500k Subscribers resize...........*/
+.publisher img{
+  width: 40px;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+.publisher div p{
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+}
+.publisher div span{
+  font-size: 13px;
+  color: #5a5a5a;
+}
+
+/* .............Subscribe color in red color ...*/
+
+.publisher button{
+  background: red;
+  color: #fff;
+  padding: 8px 30px;
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/*........ slightly move down  under the channel name Easy turtotial
+
+Channel That Make Learning Easy Subscribe Easy Turtorial To Watch More Turtorial On web Development.........*/
+.vid-description{
+  padding-left: 55px;
+  margin: 15px 0;
+}
+/*......Gap between  not working
+hannel That Make Learning Easy Subscribe Easy Turtorial To Watch More Turtorial On web Development........*/
+.vid-description p{
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #5a5a5a;
+}
+
+/*....bold comment .....*/
+
+.vid-description h4 {
+  font-size: 13px;
+  color: #5a5a5a;
+  margin-top: 15px;
+}
+ /*........commnet*/
+.add-comment {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.add-comment img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.add-comment input {
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  padding-top: 10px;
+  background: transparent;
+}
+ /*...... bold and resize
+ Jack Nicholson 2 days ago.......*/
+.old-comment {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.old-comment img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.old-comment h3 {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.old-comment h3 span {
+  font-size: 12px;
+  color: #5a5a5a;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.old-comment p{
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #5a5a5a;
+}
+
+ .old-comment .acomment-action {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  font-size: 14px;
+ }
+
+ .old-comment .acomment-action img {
+  border-radius: 0;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+ }
+
+ .old-comment .acomment-action span {
+  margin-right: 20px;
+  color: #5a5a5a;
+ }
+
+ .old-comment .acomment-action a{
+  color: #0000ff;
+ }
+  /*...Bold All replies...*/
+  .old-comment .acomment-action a{
+    color: #0000ff;
+   }
+  
+
+ @media (max-width:900px){
+   .play-video{
+    flex-basis: 100%;
+   }
+   .right-sidebar{
+    flex-basis: 100%;
+   }
+    .play-container{
+      padding-left: 5%;
+    }
+    .vid-description{
+      padding-left: 0;
+    }
+    .play-video .play-video-info a{
+      margin-left: 0;
+      margin-right: 15px;
+      margin-top: 15px;
+    }
+   }
