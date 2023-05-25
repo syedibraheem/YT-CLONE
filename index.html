@@ -4,275 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube Clone</title>
+    <title>Responsive Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <!------fONT AWSOME font icon css----->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+
 </head>
 <body>
-<nav class="flex-div">
-    <div class="nav-left flex-div">
-    <img src="images/menu.png" class="menu-icon">
-    <img src="images/logo.png" class="logo">
-</div>
-    <div class="nav-middle flex-div">
-        <div class="search-box flex-div">
-            <input type="text" placeholder="Search">
-            <img src="imges/search.png">
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa"></i>
+                    <div class="logo tex">Ibraheem</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="images/main-photo.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I 'm <span class="">Developer</span></h5>
+                <h1>Ibraheem</h1>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima nobis non libero ex laborum. Repellat enim consequatur alias in dolorum aliquid earum, autem omnis laboriosam delectus deserunt? Eaque, fugiat ab.
+
+                </p>
+                <div class="btn-group">
+                    <a href="#" class="btn">Download Cv</a>
+                    <a href="#" class="btn">Contact</a>
+                </div>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-pintrest"></i></a>
+                </div>
+                </div>
+            </div>
         </div>
-        <img src="images/voice-search.png" class="mic-icon">
-        </div>
-    <div class="nav-right flex-div">
-        <img src="images/upload.png">
-        <img src="images/more.png" >
-        <img src="images/notification.png">
-        <img src="images/Jack.png" class="user-icon">
-
-
-
-  
-    </div>
-</nav>
-<!------sidebar------>
-    <div class="sidebar">
-        <div class="shortcut-links">
-            <a href=""><img src="images/home.png"><p>Home</p></a>
-            <a href=""><img src="images/explore.png"><p>Explore</p></a>
-            <a href=""><img src="images/subscriprion.png"><p>Subscriprion</p></a>
-            <a href=""><img src="images/library.png"><p>Library</p></a>
-            <a href=""><img src="images/history.png"><p>History</p></a>
-            <a href=""><img src="images/playlist.png"><p>Playlist</p></a>
-            <a href=""><img src="images/messages.png"><p>Messages</p></a>
-            <a href=""><img src="images/show-more.png"><p>Show-More</p></a>
-            <hr>
-        </div>
-
-        <div class="subscribed-list">
-            <h3>SUBSCRIBED</h3>
-            <a href=""><img src="images/Jack.png"><p>Jack</p></a>
-            <a href=""><img src="images/simon.png"><p>Simon Baker</p></a>
-            <a href=""><img src="images/tom.png"><p>Tom Hardy</p></a>
-            <a href=""><img src="images/megan.png"><p>Megan Ryan</p></a>
-            <a href=""><img src="images/cameron.png"><p>cameron Diaz</p></a>
-
-        </div>
-
     </div>
 
+    <script>
+        /*----creating button click show hide navbar----*/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
 
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
 
+        })
 
-
- <!---filters-->
-
- <div class="filters">
-    <a href="#" class="previous round">&#8249;</a>
-  
-    <button class="filter-options active">All</button>
-    <button class="filter-options">CSS</button>
-    <button class="filter-options">Web development</button>
-    <button class="filter-options">Python</button>
-    <button class="filter-options">Entertainment</button>
-    <button class="filter-options">Music</button>
-    <button class="filter-options">Javascript</button>
-    <button class="filter-options">Gaming</button>
-    <button class="filter-options">Programing</button>
-    <button class="filter-options">Trending</button>
-    <button class="filter-options">C++</button>
-    <button class="filter-options">Ideas</button>
-    <button class="filter-options">Cooking</button>
-    <button class="filter-options">Songs</button>
-    <button class="filter-options">New to you</button>
-    <button class="filter-options">Recently Uploaded</button>
-    <button class="filter-options">Live</button>
-    <button class="filter-options">Watched</button>
-    <a href="#" class="next round">&#8250;</a>
-</div>
-
-
-
-
-<!------Add Main pic ------>
-<div class="container">
-    <div class="banner">
-        <img src="images/banner.png">
-    </div>
-    <div class="list-container">
-        <div class="vid-list">
-            <a href="play-video.html"><img src="images/thumbnail1.png" class="thumbnail"></a>
-            <div class="flex-div">
-                <img src="images/Jack.png">
-                <div class="vid-info">
-                    <a href="play-video.html">Best channel to learn coding that help you to be a web developer</a>
-                    <p>Relaxazion vedio</p>
-                    <p>15k views &bull;; 2 days</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="vid-list">
-            <a href="play-video.html"><img src="images/thumbnail2.png" class="thumbnail"></a>
-            <div class="flex-div">
-                <img src="images/Jack.png">
-                <div class="vid-info">
-                    <a href="">Best channel to learn coding that help you to be a web developer</a>
-                    <p>Relaxazion vedio</p>
-                    <p>15k views &bull; 2 days</p>
-                </div>
-            </div>
-        </div>
-        <div class="vid-list">
-            <a href=""><img src="images/thumbnail3.png" class="thumbnail"></a>
-            <div class="flex-div">
-                <img src="images/Jack.png">
-                <div class="vid-info">
-                   <a href="play-video.html">Best channel to learn coding that help you to be a web developer</a>
-                    <p>Relaxazion vedio</p>
-                    <p>15k views &bull;; 2 days</p>
-                </div>
-            </div>
-        </div>
-        <div class="vid-list">
-            <a href=""><img src="images/thumbnail4.png" class="thumbnail"></a>
-            <div class="flex-div">
-                <img src="images/Jack.png">
-                <div class="vid-info">
-                   <a href="play-video.html">Best channel to learn coding that help you to be a web developer</a>
-                    <p>Relaxazion vedio</p>
-                    <p>15k views &bull;; 2 days</p>
-                </div>
-            </div>
-        </div>
-        <div class="vid-list">
-            <a href=""><img src="images/thumbnail5.png" class="thumbnail"></a>
-            <div class="flex-div">
-                <img src="images/Jack.png">
-                <div class="vid-info">
-                    <a href="play-video.html">Best channel to learn coding that help you to be a web developer</a>
-                    <p>Relaxazion vedio</p>
-                    <p>15k views &bull;; 2 days</p>
-                </div>
-            </div>
-        </div>
-        <div class="vid-list">
-            <a href=""><img src="images/thumbnail6.png" class="thumbnail"></a>
-            <div class="flex-div">
-                <img src="images/Jack.png">
-                <div class="vid-info">
-                    <a href="play-video.html">Best channel to learn coding that help you to be a web developer</a>
-                    <p>Relaxazion vedio</p>
-                    <p>15k views &bull;; 2 days</p>
-                </div>
-            </div>
-        </div>
-        <div class="vid-list">
-            <a href=""><img src="images/thumbnail7.png" class="thumbnail"></a>
-            <div class="flex-div">
-                <img src="images/Jack.png">
-                <div class="vid-info">
-                    <a href="play-video.html">Best channel to learn coding that help you to be a web developer</a>
-                    <p>Relaxazion vedio</p>
-                    <p>15k views &bull;; 2 days</p>
-                </div>
-            </div>
-        </div>
-        <div class="vid-list">
-            <a href=""><img src="images/thumbnail8.png" class="thumbnail"></a>
-            <div class="flex-div">
-                <img src="images/Jack.png">
-                <div class="vid-info">
-                  <a href="play-video.html">Best channel to learn coding that help you to be a web developer</a>
-                    <p>Relaxazion vedio</p>
-                    <p>15k views &bull;; 2 days</p>
-                </div>
-            </div>
-        </div>
-        <div class="vid-list">
-            <a href=""><img src="images/thumbnail8.png" class="thumbnail"></a>
-            <div class="flex-div">
-                <img src="images/Jack.png">
-                <div class="vid-info">
-                   <a href="play-video.html">Best channel to learn coding that help you to be a web developer</a>
-                    <p>Relaxazion vedio</p>
-                    <p>15k views &bull;; 2 days</p>
-                </div>
-            </div>
-        </div>
-        <div class="vid-list">
-            <a href=""><img src="images/thumbnail8.png" class="thumbnail"></a>
-            <div class="flex-div">
-                <img src="images/Jack.png">
-                <div class="vid-info">
-                   <a href="play-video.html">Best channel to learn coding that help you to be a web developer</a>
-                    <p>Relaxazion vedio</p>
-                    <p>15k views &bull;; 2 days</p>
-                </div>
-            </div>
-        </div>
-        <div class="vid-list">
-            <a href=""><img src="images/thumbnail8.png" class="thumbnail"></a>
-            <div class="flex-div">
-                <img src="images/Jack.png">
-                <div class="vid-info">
-                  <a href="play-video.html">Best channel to learn coding that help you to be a web developer</a>
-                    <p>Relaxazion vedio</p>
-                    <p>15k views &bull;; 2 days</p>
-                </div>
-            </div>
-        </div>
-        <div class="vid-list">
-            <a href=""><img src="images/thumbnail8.png" class="thumbnail"></a>
-            <div class="flex-div">
-                <img src="images/Jack.png">
-                <div class="vid-info">
-                  <a href="play-video.html">Best channel to learn coding that help you to be a web developer</a>
-                    <p>Relaxazion vedio</p>
-                    <p>15k views &bull;; 2 days</p>
-                </div>
-            </div>
-        </div>
-        <div class="vid-list">
-            <a href=""><img src="images/thumbnail1.png" class="thumbnail"></a>
-            <div class="flex-div">
-                <img src="images/Jack.png">
-                <div class="vid-info">
-                   <a href="play-video.html">Best channel to learn coding that help you to be a web developer</a>
-                    <p>Relaxazion vedio</p>
-                    <p>15k views &bull;; 2 days</p>
-                </div>
-            </div>
-        </div>
-        <div class="vid-list">
-            <a href=""><img src="images/thumbnail1.png" class="thumbnail"></a>
-            <div class="flex-div">
-                <img src="images/Jack.png">
-                <div class="vid-info">
-                   <a href="play-video.html">Best channel to learn coding that help you to be a web developer</a>
-                    <p>Relaxazion vedio</p>
-                    <p>15k views &bull;; 2 days</p>
-                </div>
-            </div>
-        </div>
-        <div class="vid-list">
-            <a href=""><img src="images/thumbnail1.png" class="thumbnail"></a>
-            <div class="flex-div">
-                <img src="images/Jack.png">
-                <div class="vid-info">
-                   <a href="play-video.html">Best channel to learn coding that help you to be a web developer</a>
-                    <p>Relaxazion vedio</p>
-                    <p>15k views &bull;; 2 days</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
+    
 
 
 
 
 
+    </script>
 
-<!------Add link between jS and HTML ------>
-
-<script src="scripts.js"></script>
 </body>
-
 </html>

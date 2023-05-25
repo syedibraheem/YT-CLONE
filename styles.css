@@ -1,583 +1,183 @@
 *{
-    margin:0;
-    padding:0%;
-    font-family: 'popins',sans-serif;
-    box-sizing: border-box;
-}
-
-a{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: poppins,sans-serif;
   text-decoration: none;
-  color: #5a5a5a;
 }
-img{
-  cursor: pointer;
-}
-.flex-div{
-  display: flex;
-  align-items: center;
-}
-nav{
-  padding: 10px 2px;
-  justify-content: space-between;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  background: #fff;
-  position: sticky;
-  top:0; 
-  z-index: 10;
-}
-.nav-right img{
-  width: 20px;
-  margin-right: 25px;
-}
-.nav-right .user-icon{
-  width: 35px;
-  border-radius: 50%;
-  margin-right: 0;
+body{
+  overflow-x: hidden;
 }
 
-.nav-left .menu-icon{
-  width:22px;
-  margin-right:25px;
-}
-.nav-left .logo{
-  width: 130px;
-}
-.nav-middle .mic-icon{
-  width: 16px;
-}
-.nav-middle .search-box{
-  border: 1px solid #ccc;
-  margin-right: 15px;
-  padding: 8px 12px;
-  border-radius: 25px
-}
-.nav-middle .search-box input{
-  width: 400px;
-  border: 0;
-  outline: 0;
-  background: transparent;
-}
-.nav-middle .search-box img{
-  width: 15px;
-}
+/*------hero-header-----*/
 
-/*----------sidebar---------------*/
-.sidebar{
-  background: #fff;
-  width: 15%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  padding-left: 2%;
-  padding-top: 80px;
-}
-/*---------shortcuts size change code home explore etc -------*/
-.shortcut-links a img{
-  width: 20px;
-  margin-right: 20px;
-}
-/*---------shortcuts name move from down to right side etc -------*/
-
-.shortcut-links a{
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  width: fit-content;
-  flex-wrap: wrap;
+.hero-header{
+  width: 100x;
+  height: 100x;
+  min-height: 100vh;
+  background: #222;
 
 }
-/*---------shortcuts Home color change but my color is not chnage-------*/
-.shortcut-links a :first-child{
-  color: #ed3833;
+.wrapper{
+  width: 2080px;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
-/*---------shortcuts line code not working etc -------*/
-.sidebar hr{
-  border: 0;
-  height: 1px;
-  background: #ccc;
-  width: 8%;
-}
-
-/*---------Subscribes name  resize-------*/
-.subscribed-list h3{
-  font-size: 13px;
-  margin: 20px 0;
-  color: #5a5a5a;
-}
-/*---------Subscribes name move from down to right side  -------*/
-
-.subscribed-list a{
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  width: fit-content;
-  flex-wrap: wrap;
-}
-/*---------Subscribes name  and name perfect resize-------*/
-.subscribed-list a img{
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  margin-right: 20px;
-}
-/*---------shortcuts is not minimize -------*/
- 
-.small-sidebar{
-  width: 5%;
-}
-
-.small-sidebar a p{
-  display: none;
-
-}
-.small-sidebar h3{
-  display: none;
-}
-
-.small-sidebar hr{
-  width: 50%;
-  margin-bottom: 25px;
-}
-
-/*---------main -------*/
-
-.container {
-  background: #f9f9f9;
-  padding-left: 17%;
-  padding-right: 2%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.large-container {
-  padding: 7%;
-} 
-
-.large-list-container {
-  padding: 7%;
-} 
-
-
-.banner {
-  width: 100%;
-}
-
-.banner img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.list-container {
-
-
-  /*.....finally find the error
-  padding-left: 17%;
-  padding-right: 2%;
-  padding-top: 20px;
-  padding-bottom: 20px; ...............*/
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-column-gap: 16px;
-  grid-row-gap: 30px;
-  margin-top: 15px;
-}
-
-.vid-list .thumbnail {
-  width: 100%;
-  border-radius: 5%;
-}
-
-.vid-list .flex-div{
-  align-items: flex-start;
-  margin-top: 7px;
-}
-
-.vid-list .flex-div img {
-  width: 35px;
-  height: 35px;
-  margin-right: 10px;
-  border-radius: 50%;
-}
-
-.vid-info {
-  color: #5a5a5a;
-  font-size: 13px;
-}
-
-.vid-info a {
-color: #000;
-font-weight: 600;
-display: block;
-margin-bottom: 5px;
-}
-
-
-@media(max-wdth: 900px){
-  .menu-icon{
-    display: none;
-    
-  }
-  .sidebar{
-    display: none;
-  }
-  .container, .large-container{
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  .nav-right img{
-    display: none;
-  }
-
-  .nav-right .user-icon{
-    display: block;
-    width: 30px;
-  }
-  .nav-middle .search-box input{
-    width: 100px;
-  }
-  .nav-middle .mic-icon{
-    display: none;
-  }
-  .logo{
-    width: 90px;
-  }
-}
-/*------------play video page-------------*/
-
-
-.play-container {
-  padding-left: 2%;
-}
-.row{
+header{
+  padding: 40px 0 3px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.play-video{
-  flex-basis: 69%;
-}
-
-.right-sidebar {
-  flex-basis: 30%;
-}
-
-.play-video video {
-  width: 100%;
-}
-
-/*...........#Css #HTMl #JAVASCRIPt in blue color changes...........*/
-.side-video-list {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 8px;
-}
-
-.side-video-list img{
-  width: 100%;
-}
-.side-video-list .small-thumnail{
-  flex-basis: 49%;
-}
-.side-video-list .vid-info{
-  flex-basis: 49%;
-}
-.play-video .tags a{
-  color: #0000ff;
-  font-size: 13px;
-}    /*........Best Youtube Channl to Learn Development Knowledge size ............*/
-.play-video h3{
-  font-weight: 600;
-  font-size: 22px;
-}
-/* ............like and dislike perfect resize...........*/ 
-.play-video .play-video-info{
-  display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 10px;
-  font-size: 14px;
-  color: #5a5a5a;
 }
-.play-video .play-video-info a img {
-  width: 20px;
-  margin-right: 8px;
-}
-
-/* .............views and likes are equal in lin e...........*/ 
-.play-video .play-video-info a{
+.logo{
   display: inline-flex;
+  justify-content: center;
   align-items: center;
-  margin-left: 15px;
 }
-/* .............make the under line in light color below the views and likes ...........*/ 
-.play-video hr{
-  border: 0;
-  height: 1px;
-  background: #ccc;
-  margin: 10px 0;
-}
-
-/* .............subscribe button  move from left to right...........*/
-.publisher{
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-}
-.publisher div{
-  flex: 1;
-  line-height: 18px;
-}
-
-/* .............Jack image and Easy Turtorial 500k Subscribers resize...........*/
-.publisher img{
-  width: 40px;
-  border-radius: 50px;
-  margin-right: 15px;
-}
-.publisher div p{
-  color: #000;
-  font-weight: 600;
-  font-size: 18px;
-}
-.publisher div span{
-  font-size: 13px;
-  color: #5a5a5a;
-}
-
-/* .............Subscribe color in red color ...*/
-
-.publisher button{
-  background: red;
+.logo{
+  height: 45px;
+  width: 45px;
+  background-color: #007ced;
+  border-radius: 50%;
   color: #fff;
-  padding: 8px 30px;
-  border: 0;
-  outline: 0;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-
-/*........ slightly move down  under the channel name Easy turtotial
-
-Channel That Make Learning Easy Subscribe Easy Turtorial To Watch More Turtorial On web Development.........*/
-.vid-description{
-  padding-left: 55px;
-  margin: 15px 0;
-}
-/*......Gap between  not working
-hannel That Make Learning Easy Subscribe Easy Turtorial To Watch More Turtorial On web Development........*/
-.vid-description p{
-  font-size: 14px;
-  margin-bottom: 5px;
-  color: #5a5a5a;
-}
-
-/*....bold comment .....*/
-
-.vid-description h4 {
-  font-size: 13px;
-  color: #5a5a5a;
-  margin-top: 15px;
-}
- /*........commnet*/
-.add-comment {
-  display: flex;
-  align-items: center;
-  margin: 30px 0;
-}
-
-.add-comment img {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  margin-right: 15px;
-}
-
-.add-comment input {
-  border: 0;
-  outline: 0;
-  border-bottom: 1px solid #ccc;
-  width: 100%;
-  padding-top: 10px;
-  background: transparent;
-}
- /*...... bold and resize
- Jack Nicholson 2 days ago.......*/
-.old-comment {
-  display: flex;
-  align-items: center;
-  margin: 20px 0;
-}
-
-.old-comment img {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  margin-right: 15px;
-}
-
-.old-comment h3 {
-  font-size: 14px;
-  margin-bottom: 2px;
-}
-
-.old-comment h3 span {
-  font-size: 12px;
-  color: #5a5a5a;
-  font-weight: 500;
-  margin-left: 8px;
-}
-
-.old-comment p{
-  font-size: 13px;
-  margin-bottom: 5px;
-  color: #5a5a5a;
-}
-
- .old-comment .acomment-action {
-  display: flex;
-  align-items: center;
-  margin: 8px 0;
-  font-size: 14px;
- }
-
- .old-comment .acomment-action img {
-  border-radius: 0;
-  width: 20px;
-  height: 20px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 10px;
   margin-right: 5px;
- }
-
- .old-comment .acomment-action span {
-  margin-right: 20px;
-  color: #5a5a5a;
- }
-
- .old-comment .acomment-action a{
-  color: #0000ff;
- }
-  /*...Bold All replies...*/
-  .old-comment .acomment-action a{
-    color: #0000ff;
-   }
-
-   
-
-
-
-
-/*---------filters-------------*/
-
-.filters{
-  position: fixed;
-  left: 250px;
-  top: 80px;
-  width: calc(100% - 250px);
-  height: 60px;
-  background: #fff;
-  padding-left: 10px;
-  padding-right: 2%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: flex;
-  align-items: center;
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.filters::-webkit-scrollbar{
-  display: none;
-}
-
-.filter-options{
-  flex: 0 0 auto;
-  padding: 8px 20px;
-  border-radius: 50px;
-  background: #f0f0f0;
-  border: 1px solid #faf8f8db;
-  text-transform: capitalize;
-  margin-right: 10px;
-  color: #474646;
-  font-size: 14px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  padding-right: 2%;
 }
-
-.filter-options.active{
-  color:#f0f0f0; 
-  background: #242424;
+.logo .logo-text{
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
 }
-
-.filter-options:hover {
-  background-color: #e1e1e1;
+nav .togglebtn{
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 45px;
+  right: 3x;
+  z-index: 5;
+  cursor: pointer;
+ display: none;
 }
- 
-a {
-  text-decoration: none;
+nav .togglebtn span{
+  display: block;
+  background-color: #007ced;
+  margin: 5px 0px;
+  width: 100%;
+  height: 3px;
+  transition: 0.3s;
+  transition-property: transform, opacity;
+}
+nav .navlinks{
+  list-style-type: none;
+}
+nav .navlinks li{
   display: inline-block;
-  padding: 8px 16px;
 }
-
-a:hover {
-  background-color: #ddd;
-  color: black;
+nav .navlinks li a{
+  color: #e5e5e5;
+  margin-right: 2.5rem;
 }
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-top: 4rem;
 
-.previous {
-  background-color: #f1f1f1;
-  color: black;
 }
-
-.next {
-  background-color: #04AA6D;
-  color: white;
-}
-
-.round {
+.container .hero-pic{
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
+  overflow: hidden;
+  border: 15px solid #444;
+  box-shadow: 5px 7px 25px rgba(0,0,0, 5);
 }
+.hero-pic img{
+  transform: scale(1.2);
 
-/*---------small screen filtter----------*/
-
-.large-filters {
-  padding: 7%;
 }
+.hero-text{
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.hero-text h5{
+  color: #007ced;
+  font-size: 16px;
+}
+.hero-text h1{
+  color: #007ced;
+  font-size: 3rem;
+}
+.hero-text p{
+  color: #e5e5e5;
+}
+.btn-group{
+  margin: 45px 0;
+}
+.btn-group .btn{
+  border-color: #d5d5d5;
+  color: #fff;
+  background-color: #333;
+  padding: 12px 25px;
+  margin: 5px 0px;
+  margin-right: 7px;
+  border-radius: 30px;
+  border: 2px solid #e5e5e5;
+  box-shadow: 0 10px 10px -8px rgb(0 0 0 / 73%);
+}
+.btn-active{
+  border-color: #007ced;
+}
+/*--------Responsive design & small nav bar -----------*/
 
 
+@media(max-width:930px)
+{
+  nav .togglebtn{
+    display: initial;
+  }
+  /*--------For toggle button -----------*/
+  .click{
+    top: 45px;
+  }
+  .click span{
+    position: absolute;
+    margin-top: 12px;
+  }
+  .click span:first-child{
+    transform: rotate(-40deg);
+  }
+  .click span:nth-child(2)
+  {
+    opacity: 0;
+    margin: 0;
+  }
+  .click span:last-child{
+    transform:rotate(45deg);
+  top: 0;
+  }
+  nav .navlinks{
+    position: absolute;
+    top: 110px;
+    right: 100;
+    bottom: 0;
+    width: 60px;
+    height: 100vh;
+    background-color: #222;
+    z-index: 3;
+    box-shadow: 5px 13px rgba(0,0,0,0);
+    transition: 0.5s;
+    padding: 25px 0px;
 
+  }
+  nav .navlinks li{
+    display: block;
+  }
 
-
-
-
-
-
-
-
-
-  
-
- @media (max-width:900px){
-   .play-video{
-    flex-basis: 100%;
-   }
-   .right-sidebar{
-    flex-basis: 100%;
-   }
-    .play-container{
-      padding-left: 5%;
-    }
-    .vid-description{
-      padding-left: 0;
-    }
-    .play-video .play-video-info a{
-      margin-left: 0;
-      margin-right: 15px;
-      margin-top: 15px;
-    }
-   }
+}
